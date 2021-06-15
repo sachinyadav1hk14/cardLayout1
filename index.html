@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Read More or Less More using JavaScript</title>
+ <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+ <div class="container">
+  <div class="card">
+   <div class="icon"><img src="./images/bar-graph.png"></div>
+   <div class="content">
+    <h1>Growth of our Company</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab dignissimos reprehenderit maxime. Maxime delectus, doloremque reiciendis ad saepe illo. Enim amet nulla alias soluta hic eaque, totam cupiditate molestias. Commodi, esse saepe. Odit hic itaque dignissimos. Facere dignissimos tenetur obcaecati, maiores sequi perferendis dolorum atque id modi nam, alias facilis!</p>
+   </div>
+   <a class="more"></a>
+  </div>
+  <div class="card">
+   <div class="icon"><img src="./images/server.png"></div>
+   <div class="content">
+    <h1>Servres and data-centers</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab dignissimos reprehenderit maxime. Maxime delectus,
+     doloremque reiciendis ad saepe illo. Enim amet nulla alias soluta hic eaque, totam cupiditate molestias. Commodi,
+     esse saepe. Odit hic itaque dignissimos. Facere dignissimos tenetur</p>
+   </div>
+  <a class="more"></a>
+  </div>
+  <div class="card">
+   <div class="icon"><img src="./images/skills.png"></div>
+   <div class="content">
+    <h1>Skills</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab dignissimos reprehenderit maxime. Maxime delectus,
+     doloremque reiciendis ad saepe illo. Enim amet nulla alias soluta hic eaque, totam cupiditate molestias. Commodi,
+     esse saepe. Odit hic itaque dignissimos. Facere dignissimos tenetur obcaecati, maiores sequi perferendis dolorum
+     atque id modi nam, alias facilis!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora pariatur, cum facere sequi id ad!</p>
+   </div>
+  <a class="more"></a>
+  </div>
+ </div>
+ <script>
+   let more = document.querySelectorAll(".more");
+   for(let i=0; i<more.length; i++){
+     more[i].addEventListener('click',function(){
+       more[i].parentNode.classList.toggle('active')
+     }) 
+   }
+ </script>
+</body>
+</html>
